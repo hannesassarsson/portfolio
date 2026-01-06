@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hannes Assarsson - Portfolio</title>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+
     <style>
         .hero-image {
             position: absolute;
@@ -41,295 +43,145 @@
                 right: 0;
             }
         }
+
+        .project-card {
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            padding: 25px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+        }
+
+        .project-tech {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .project-link {
+            margin-top: 10px;
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li><a href="#about">Om mig</a></li>
-            <li><a href="#experience">Erfarenhet</a></li>
-            <li><a href="#education">Utbildning</a></li>
-            <li><a href="#skills">Kompetenser</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </header>
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Hannes Assarsson</h1>
-            <h2>Teknikentusiast & Mjukvaruutvecklare</h2>
-        </div>
-        <img src="images/hannes.png" alt="Hannes Assarsson" class="hero-image">
-        <div id="lead-overlay"></div>
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-    </div>
+<header>
+    <ul id="menu" class="shadow">
+        <li><a href="#about">Om mig</a></li>
+        <li><a href="#experience">Erfarenhet</a></li>
+        <li><a href="#education">Utbildning</a></li>
+        <li><a href="#projects">Projekt</a></li>
+        <li><a href="#skills">Kompetenser</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</header>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">Om mig</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Jag är en teknikentusiast med en passion för mjukvaruutveckling och smarta lösningar. Jag studerar till mjukvaruutvecklare inom inbyggda system och har erfarenhet av både webbutveckling och systemprogrammering. Jag älskar att lösa problem och skapa innovativa lösningar, särskilt inom IoT och hemautomation.
-                    </p>
-                </div>
+<div id="lead">
+    <div id="lead-content">
+        <h1>Hannes Assarsson</h1>
+        <h2>Mjukvaruutvecklare inom system och inbyggda lösningar</h2>
+    </div>
+    <img src="images/hannes.png" alt="Hannes Assarsson" class="hero-image">
+    <div id="lead-overlay"></div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">Om mig</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Jag är utbildad mjukvaruutvecklare med examen i maj 2025 inom inbyggda system och systemutveckling.
+                    Jag har en bred teknisk grund och erfarenhet av att arbeta med både systemnära kod och webbaserade applikationer.
+                    <br><br>
+                    Jag trivs bäst när jag får förstå helheten bakom ett problem och bygga genomtänkta lösningar som fungerar i praktiken.
+                    På fritiden är jag aktiv inom träning och teknikprojekt och har ett stort intresse för system, automation och produktutveckling.
+                </p>
             </div>
         </div>
     </div>
+</div>
 
+<div id="projects" class="background-alt">
+    <h2 class="heading">Utvalda projekt</h2>
 
-            <div id="experience" class="background-alt">
-                <h2 class="heading">Erfarenhet</h2>
-                <div id="experience-timeline">
-                    <div data-date="2024 – Nuvarande">
-                        <h3>Webbutvecklare</h3>
-                        <p>Utveckling av hemsidor och digitala lösningar för företag och privatpersoner.</p>
-                    </div>
-            
-                    <div data-date="Sept 2024 – Okt 2024">
-                        <h3>Beijer Electronics (Ependion)</h3>
-                        <h4>LIA-praktik - Drivrutinsteamet</h4>
-                        <p>Arbete med utveckling och optimering av drivrutiner i en Linux-miljö.</p>
-                    </div>
-            
-                    <div data-date="2022 – Nuvarande">
-                        <h3>MH Modules AB</h3>
-                        <h4>Montör</h4>
-                        <p>Arbete med mekanisk montering och kvalitetskontroll av tekniska moduler.</p>
-                    </div>
-            
-                    <div data-date="2022 – 2023">
-                        <h3>Elgiganten AB</h3>
-                        <h4>Support & Godshantering</h4>
-                        <p>Teknisk support och kundservice, hantering och logistik av produkter.</p>
-                    </div>
-            
-                    <div data-date="2021 – 2022">
-                        <h3>Försvarsmakten - Revingehed</h3>
-                        <h4>Lastbilsförare, Granatkastarpluton (GMU)</h4>
-                        <p>Transport och logistik av tungt artilleri, utvecklade starka färdigheter inom disciplin och samarbete.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="project-card">
+        <h3>Examensarbete – In- och utcheckningssystem</h3>
+        <p>
+            Ett komplett in- och utcheckningssystem med fokus på systemarkitektur, säkerhet och användarflöden.
+            Projektet omfattar backend, frontend och integration mot inbyggd hårdvara.
+        </p>
+        <p class="project-tech">
+            Python · Flask · React · REST API · SQLite · NFC · Kamera
+        </p>
+        <a class="project-link" href="https://github.com/hannesassarsson/examensarbete" target="_blank">
+            <i class="fa fa-github"></i> Visa på GitHub
+        </a>
     </div>
 
-    <div id="education">
-        <h2 class="heading">Utbildning</h2>
-    
-        <!-- Gymnasieutbildning -->
-        <div class="education-block">
-            <h3>Praktiska Gymnasiet</h3>
-            <span class="education-date">2018 - 2021</span>
-            <h4>El & Energi</h4>
-            <p>Utbildning inom elteknik och energisystem med fokus på praktiska tillämpningar.</p>
-        </div>
-
-        <div class="education-block background-alt">
-            <h3>Försvarsmakten</h3>
-            <span class="education-date">2021 - 2022</span>
-            <h4>Grundläggande Militär Utbildning (GMU)</h4>
-            <p>Utbildning vid Revingehed med fokus på:
-                <ul>
-                    <li>Lastbilstransport av tungt artilleri</li>
-                    <li>Logistik och resursplanering</li>
-                    <li>Lagarbete och ledarskap</li>
-                    <li>Fysisk och mental uthållighet</li>
-                </ul>
-            </p>
-        </div>
-    
-        <!-- YH-utbildning -->
-        <div class="education-block">
-            <h3>Movant YH</h3>
-            <span class="education-date">2023 - 2025</span>
-            <h4>Mjukvaruutvecklare Inbyggda System</h4>
-            
-            <div class="course-table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Kursnamn</th>
-                            <th class="status-header">Status/Betyg</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Examensarbete</td>
-                            <td><span class="status ongoing">Pågående</span></td>
-                        </tr>
-                        <tr>
-                            <td>Lärande i arbete, LIA 2</td>
-                            <td><span class="status ongoing">Pågående</span></td>
-                        </tr>
-                        <tr>
-                            <td>Test och säkerhet</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Realtidssystem</td>
-                            <td><span class="status g">G</span></td>
-                        </tr>
-                        <tr>
-                            <td>Lärande i arbete, LIA 1</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Programmering, inbyggda system</td>
-                            <td><span class="status g">G</span></td>
-                        </tr>
-                        <tr>
-                            <td>Projektmetodik</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Elektronik och programmering</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Datastrukturer och algoritmer</td>
-                            <td><span class="status g">G</span></td>
-                        </tr>
-                        <tr>
-                            <td>Tillämpad matematik för programmering</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Datakommunikation</td>
-                            <td><span class="status vg">VG</span></td>
-                        </tr>
-                        <tr>
-                            <td>Strukturerad programmering C/C++</td>
-                            <td><span class="status g">G</span></td>
-                        </tr>
-                        <tr>
-                            <td>Inbyggda system, introduktion</td>
-                            <td><span class="status g">G</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-    
-    <style>
-    /* Uppdaterad CSS för utbildningssektion */
-    .education-block {
-        max-width: 800px;
-        margin: 0 auto 40px auto;
-        padding: 25px;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-        transition: transform 0.3s ease;
-    }
-    
-    .education-block:hover {
-        transform: translateY(-5px);
-    }
-    
-    .course-table table {
-        width: 100%;
-        border-collapse: separate;
-        border-spacing: 0 12px;
-        margin-top: 20px;
-    }
-    
-    .course-table th {
-        background: linear-gradient(135deg, #3498db, #2980b9);
-        color: white;
-        padding: 18px 25px;
-        font-size: 1.1em;
-    }
-    
-    .course-table td {
-        padding: 18px 25px;
-        background: #f8f9fa;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-    
-    .status-header { width: 150px; }
-    
-    .status {
-        display: inline-block;
-        padding: 6px 15px;
-        border-radius: 20px;
-        font-weight: 600;
-        font-size: 0.9em;
-    }
-    
-    .status.ongoing {
-        background: #f39c12;
-        color: #fff;
-    }
-    
-    .status.vg {
-        background: #27ae60;
-        color: #fff;
-    }
-    
-    .status.g {
-        background: #3498db;
-        color: #fff;
-    }
-    
-    @media (max-width: 768px) {
-        .education-block {
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        
-        .course-table td {
-            padding: 15px 20px;
-        }
-    }
-    </style>
-
-    <div id="skills" class="background-alt">
-        <h2 class="heading">Kompetenser</h2>
-        <ul>
-            <li>C/C++</li>
-            <li>Python</li>
-            <li>Embedded Systems</li>
-            <li>Realtidssystem</li>
-            <li>IoT</li>
-            <li>Testautomation</li>
-            <li>Cybersäkerhet</li>
-            <li>Linux</li>
-            <li>MQTT</li>
-            <li>Projektmetodik</li>
-            <li>Datastrukturer</li>
-            <li>Algoritmer</li>
-            <li>Elektronik</li>
-            <li>Datakommunikation</li>
-            <li>Bash</li>
-        </ul>
+    <div class="project-card">
+        <h3>HA Dashboard</h3>
+        <p>
+            En webbaserad dashboard för Home Assistant med fokus på översikt, automation och tydlig visualisering
+            av sensorer och systemstatus.
+        </p>
+        <p class="project-tech">
+            JavaScript · API integration · Dashboardlogik
+        </p>
+        <a class="project-link" href="https://github.com/hannesassarsson/webapp_HA" target="_blank">
+            <i class="fa fa-github"></i> Visa på GitHub
+        </a>
     </div>
 
-    <div id="contact">
-        <h2>Kontakt</h2>
-        <p>Vill du komma i kontakt med mig? Skicka ett mejl eller ring!</p>
-        <p>Email: hannesassarsson02@gmail.com</p>
-        <p>Telefon: 076-322 15 64</p>
+    <div class="project-card">
+        <h3>Bokningsapp</h3>
+        <p>
+            En enklare webbaserad bokningsapplikation byggd som ett lärprojekt för att förstå bokningsflöden,
+            CRUD operationer och systemstruktur.
+        </p>
+        <p class="project-tech">
+            Webbutveckling · CRUD · Systemflöden
+        </p>
+        <a class="project-link" href="https://github.com/hannesassarsson/bokning-app" target="_blank">
+            <i class="fa fa-github"></i> Visa på GitHub
+        </a>
     </div>
+</div>
 
-    <footer>
-        <p>Copyright &copy; 2025 Hannes Assarsson</p>
-    </footer>
+<div id="skills">
+    <h2 class="heading">Kompetenser</h2>
+    <ul>
+        <li>C C++</li>
+        <li>Python</li>
+        <li>Linux</li>
+        <li>Embedded systems</li>
+        <li>Systemarkitektur</li>
+        <li>REST API</li>
+        <li>Databaser</li>
+        <li>IoT</li>
+        <li>Git</li>
+        <li>Datastrukturer och algoritmer</li>
+        <li>Testning och säkerhet</li>
+    </ul>
+</div>
+
+<div id="contact">
+    <h2>Kontakt</h2>
+    <p>Email: hannesassarsson02@gmail.com</p>
+    <p>Telefon: 076 322 15 64</p>
+</div>
+
+<footer>
+    <p>© 2025 Hannes Assarsson</p>
+</footer>
+
 </body>
 </html>
