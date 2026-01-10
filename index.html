@@ -80,6 +80,30 @@
             display: block;
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
         }
+
+        .cv-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .cv-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 18px 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+        }
+
+        .cv-card h3 {
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .cv-card ul {
+            margin: 0;
+            padding-left: 18px;
+        }
     </style>
 </head>
 
@@ -296,23 +320,27 @@
                     API-design och tydliga flöden. Jag arbetar gärna både självständigt och i team, och trivs med
                     problemlösning där kvalitet och tillförlitlighet står i fokus.
                 </p>
-
-                <h3>Personliga egenskaper</h3>
-                <ul>
-                    <li>Analytisk och strukturerad</li>
-                    <li>Hög säkerhetsmedvetenhet</li>
-                    <li>Snabblärd och tekniskt nyfiken</li>
-                    <li>Ansvarstagande och långsiktig</li>
-                    <li>Trivs i miljöer med höga krav på kvalitet och tillförlitlighet</li>
-                </ul>
-
-                <h3>Övrigt</h3>
-                <ul>
-                    <li>Svensk medborgare</li>
-                    <li>B-körkort</li>
-                    <li>Flytande svenska och engelska</li>
-                    <li>Beredd att vidareutbilda mig och utvecklas långsiktigt</li>
-                </ul>
+                <div class="cv-grid">
+                    <div class="cv-card">
+                        <h3>Personliga egenskaper</h3>
+                        <ul>
+                            <li>Analytisk och strukturerad</li>
+                            <li>Hög säkerhetsmedvetenhet</li>
+                            <li>Snabblärd och tekniskt nyfiken</li>
+                            <li>Ansvarstagande och långsiktig</li>
+                            <li>Trivs i miljöer med höga krav på kvalitet och tillförlitlighet</li>
+                        </ul>
+                    </div>
+                    <div class="cv-card">
+                        <h3>Övrigt</h3>
+                        <ul>
+                            <li>Svensk medborgare</li>
+                            <li>B-körkort</li>
+                            <li>Flytande svenska och engelska</li>
+                            <li>Beredd att vidareutbilda mig och utvecklas långsiktigt</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
