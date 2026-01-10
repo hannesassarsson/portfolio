@@ -66,6 +66,20 @@
             margin-top: 10px;
             display: inline-block;
         }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin: 15px 0 20px;
+        }
+
+        .project-image {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
     </style>
 </head>
 
@@ -112,6 +126,41 @@
 
 <div id="projects" class="background-alt">
     <h2 class="heading">Utvalda projekt</h2>
+    <p style="max-width: 800px; margin: 0 auto 30px auto;">
+        Här är ett urval av projekt som visar min bredd: från embedded-nära system och API:er
+        till moderna webbappar med fokus på tydliga användarflöden.
+    </p>
+
+    <div class="project-card">
+        <h3>Tidx – Tidsrapportering</h3>
+        <p>
+            Ett enkelt tidsrapporteringssystem med Express/SQLite-backend och React/Vite-frontend.
+            Backend körs lokalt via en REST-API och frontend kan konfigureras via .env.
+        </p>
+        <div class="project-gallery">
+            <img src="images/tidx.png" alt="Tidx tidsrapporteringssystem" class="project-image" loading="lazy">
+        </div>
+        <p class="project-tech">
+            Node.js · Express · SQLite · React · Vite · REST API
+        </p>
+    </div>
+
+    <div class="project-card">
+        <h3>HA Webapp</h3>
+        <p>
+            Next.js-app för Home Assistant med glasig UI, PIN-inloggning och SMHI-väder.
+            Live polling för lampor/switchar, snabbåtgärder och långtrycksmodal.
+        </p>
+        <div class="project-gallery">
+            <img src="images/ha-dashboard.png" alt="HA Webapp översikt" class="project-image" loading="lazy">
+        </div>
+        <p class="project-tech">
+            Next.js · Home Assistant · SMHI · Cloudflare Tunnel · Middleware
+        </p>
+        <a class="project-link" href="https://github.com/hannesassarsson/webapp_HA" target="_blank">
+            <i class="fa fa-github"></i> Visa på GitHub
+        </a>
+    </div>
 
     <div class="project-card">
         <h3>Examensarbete – In- och utcheckningssystem</h3>
@@ -123,20 +172,6 @@
             Python · Flask · React · REST API · SQLite · NFC · Kamera
         </p>
         <a class="project-link" href="https://github.com/hannesassarsson/examensarbete" target="_blank">
-            <i class="fa fa-github"></i> Visa på GitHub
-        </a>
-    </div>
-
-    <div class="project-card">
-        <h3>HA Dashboard</h3>
-        <p>
-            En webbaserad dashboard för Home Assistant med fokus på översikt, automation och tydlig visualisering
-            av sensorer och systemstatus.
-        </p>
-        <p class="project-tech">
-            JavaScript · API integration · Dashboardlogik
-        </p>
-        <a class="project-link" href="https://github.com/hannesassarsson/webapp_HA" target="_blank">
             <i class="fa fa-github"></i> Visa på GitHub
         </a>
     </div>
