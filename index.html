@@ -100,16 +100,19 @@
             margin-bottom: 12px;
         }
 
-        .cv-card ul {
-            margin: 0 !important;
-            padding: 0 !important;
-            list-style: none !important;
+        .cv-list {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 8px;
         }
 
-        .cv-card li {
-            list-style: none !important;
-            margin-bottom: 6px;
-            padding-left: 0 !important;
+        .cv-item {
+            padding: 8px 10px;
+            border-radius: 8px;
+            background: #f4f4f7;
+            color: #3a4654;
+            font-size: 0.95em;
         }
     </style>
 </head>
@@ -330,22 +333,22 @@
                 <div class="cv-grid">
                     <div class="cv-card">
                         <h3>Personliga egenskaper</h3>
-                        <ul>
-                            <li>Analytisk och strukturerad</li>
-                            <li>Hög säkerhetsmedvetenhet</li>
-                            <li>Snabblärd och tekniskt nyfiken</li>
-                            <li>Ansvarstagande och långsiktig</li>
-                            <li>Trivs i miljöer med höga krav på kvalitet och tillförlitlighet</li>
-                        </ul>
+                        <div class="cv-list">
+                            <div class="cv-item">Analytisk och strukturerad</div>
+                            <div class="cv-item">Hög säkerhetsmedvetenhet</div>
+                            <div class="cv-item">Snabblärd och tekniskt nyfiken</div>
+                            <div class="cv-item">Ansvarstagande och långsiktig</div>
+                            <div class="cv-item">Trivs i miljöer med höga krav på kvalitet och tillförlitlighet</div>
+                        </div>
                     </div>
                     <div class="cv-card">
                         <h3>Övrigt</h3>
-                        <ul>
-                            <li>Svensk medborgare</li>
-                            <li>B-körkort</li>
-                            <li>Flytande svenska och engelska</li>
-                            <li>Beredd att vidareutbilda mig och utvecklas långsiktigt</li>
-                        </ul>
+                        <div class="cv-list">
+                            <div class="cv-item">Svensk medborgare</div>
+                            <div class="cv-item">B-körkort</div>
+                            <div class="cv-item">Flytande svenska och engelska</div>
+                            <div class="cv-item">Beredd att vidareutbilda mig och utvecklas långsiktigt</div>
+                        </div>
                     </div>
                 </div>
             </div>
